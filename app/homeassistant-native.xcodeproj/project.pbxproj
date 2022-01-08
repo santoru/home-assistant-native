@@ -1,0 +1,785 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		680AE98F2779C37500FC62A8 /* MediaPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 680AE98E2779C37500FC62A8 /* MediaPlayerView.swift */; };
+		680AE9912779C96200FC62A8 /* HABasicIconView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 680AE9902779C96200FC62A8 /* HABasicIconView.swift */; };
+		682B2D142788BFBA003632FE /* WidgetDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 682B2D132788BFBA003632FE /* WidgetDataSource.swift */; };
+		682B2D162788C0FD003632FE /* HomeAssistantEntityModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 682B2D152788C0FD003632FE /* HomeAssistantEntityModel.swift */; };
+		682B2D182788C1AA003632FE /* HomeAssistantContextModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 682B2D172788C1AA003632FE /* HomeAssistantContextModel.swift */; };
+		682B2D1C2788C1C7003632FE /* HomeAssistantAttributeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 682B2D1B2788C1C7003632FE /* HomeAssistantAttributeModel.swift */; };
+		682B2D1E2789AC92003632FE /* ChangeStatusController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 682B2D1D2789AC92003632FE /* ChangeStatusController.swift */; };
+		682B2D202789AD6B003632FE /* HomeAssistantStateObjectModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 682B2D1F2789AD6B003632FE /* HomeAssistantStateObjectModel.swift */; };
+		682B2D222789ADD9003632FE /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 682B2D212789ADD9003632FE /* Config.swift */; };
+		683259542776811900222A76 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 683259532776811900222A76 /* HeaderView.swift */; };
+		68357E87277687FE004B2879 /* ColorManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68357E86277687FE004B2879 /* ColorManager.swift */; };
+		68357E89277688B4004B2879 /* TemperatureHumidityWidgetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68357E88277688B4004B2879 /* TemperatureHumidityWidgetView.swift */; };
+		6839796527766E420033DFBA /* homeassistant_nativeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6839796427766E420033DFBA /* homeassistant_nativeApp.swift */; };
+		6839796727766E420033DFBA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6839796627766E420033DFBA /* ContentView.swift */; };
+		6839796927766E440033DFBA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6839796827766E440033DFBA /* Assets.xcassets */; };
+		6839796C27766E440033DFBA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6839796B27766E440033DFBA /* Preview Assets.xcassets */; };
+		6839797627766E440033DFBA /* homeassistant_nativeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6839797527766E440033DFBA /* homeassistant_nativeTests.swift */; };
+		6839798027766E440033DFBA /* homeassistant_nativeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6839797F27766E440033DFBA /* homeassistant_nativeUITests.swift */; };
+		6839798227766E440033DFBA /* homeassistant_nativeUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6839798127766E440033DFBA /* homeassistant_nativeUITestsLaunchTests.swift */; };
+		685FA1EF277919A20061DF86 /* UserSettingTileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 685FA1EE277919A20061DF86 /* UserSettingTileView.swift */; };
+		685FA1F127791EDD0061DF86 /* HASettingItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 685FA1F027791EDD0061DF86 /* HASettingItemView.swift */; };
+		68A3D5D92778D01400BFDE39 /* HAColorTileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68A3D5D82778D01400BFDE39 /* HAColorTileView.swift */; };
+		68A3D5DB2778D8F800BFDE39 /* HaBrightnessSliderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68A3D5DA2778D8F800BFDE39 /* HaBrightnessSliderView.swift */; };
+		68A3D5E52778FECC00BFDE39 /* ViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68A3D5E42778FECC00BFDE39 /* ViewExtension.swift */; };
+		68A3D5E72778FF0400BFDE39 /* RoundedCorner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68A3D5E62778FF0400BFDE39 /* RoundedCorner.swift */; };
+		68A3D5E92778FF1F00BFDE39 /* BottomSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68A3D5E82778FF1F00BFDE39 /* BottomSheet.swift */; };
+		68A3D5ED2779111900BFDE39 /* SwitchWidgetListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68A3D5EC2779111900BFDE39 /* SwitchWidgetListView.swift */; };
+		68C81E38277797BF00A99F04 /* DefaultTheme.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 68C81E37277797BF00A99F04 /* DefaultTheme.xcassets */; };
+		68C81E3C277799B200A99F04 /* HAFootNoteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68C81E3B277799B200A99F04 /* HAFootNoteView.swift */; };
+		68C81E3E27779B5A00A99F04 /* HAMainTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68C81E3D27779B5A00A99F04 /* HAMainTextView.swift */; };
+		68C81E4227779D7800A99F04 /* HABasicToggleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68C81E4127779D7800A99F04 /* HABasicToggleView.swift */; };
+		68C81E482777A58100A99F04 /* HAWidgetImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68C81E472777A58100A99F04 /* HAWidgetImageView.swift */; };
+		68C81E4A2777B20600A99F04 /* LightWidgetDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68C81E492777B20600A99F04 /* LightWidgetDetailsView.swift */; };
+		68C81E4C2777B7AE00A99F04 /* ModalSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68C81E4B2777B7AE00A99F04 /* ModalSettingsView.swift */; };
+		68C81E4E2777BC5900A99F04 /* HATitleTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68C81E4D2777BC5900A99F04 /* HATitleTextView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6839797227766E440033DFBA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6839795927766E420033DFBA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6839796027766E420033DFBA;
+			remoteInfo = "homeassistant-native";
+		};
+		6839797C27766E440033DFBA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6839795927766E420033DFBA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6839796027766E420033DFBA;
+			remoteInfo = "homeassistant-native";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		680AE98E2779C37500FC62A8 /* MediaPlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaPlayerView.swift; sourceTree = "<group>"; };
+		680AE9902779C96200FC62A8 /* HABasicIconView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HABasicIconView.swift; sourceTree = "<group>"; };
+		682B2D132788BFBA003632FE /* WidgetDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetDataSource.swift; sourceTree = "<group>"; };
+		682B2D152788C0FD003632FE /* HomeAssistantEntityModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeAssistantEntityModel.swift; sourceTree = "<group>"; };
+		682B2D172788C1AA003632FE /* HomeAssistantContextModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeAssistantContextModel.swift; sourceTree = "<group>"; };
+		682B2D1B2788C1C7003632FE /* HomeAssistantAttributeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeAssistantAttributeModel.swift; sourceTree = "<group>"; };
+		682B2D1D2789AC92003632FE /* ChangeStatusController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeStatusController.swift; sourceTree = "<group>"; };
+		682B2D1F2789AD6B003632FE /* HomeAssistantStateObjectModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeAssistantStateObjectModel.swift; sourceTree = "<group>"; };
+		682B2D212789ADD9003632FE /* Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
+		683259532776811900222A76 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
+		68357E86277687FE004B2879 /* ColorManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorManager.swift; sourceTree = "<group>"; };
+		68357E88277688B4004B2879 /* TemperatureHumidityWidgetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemperatureHumidityWidgetView.swift; sourceTree = "<group>"; };
+		6839796127766E420033DFBA /* Home Assistant.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Home Assistant.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6839796427766E420033DFBA /* homeassistant_nativeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = homeassistant_nativeApp.swift; sourceTree = "<group>"; };
+		6839796627766E420033DFBA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		6839796827766E440033DFBA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6839796B27766E440033DFBA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		6839797127766E440033DFBA /* homeassistant-nativeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "homeassistant-nativeTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6839797527766E440033DFBA /* homeassistant_nativeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = homeassistant_nativeTests.swift; sourceTree = "<group>"; };
+		6839797B27766E440033DFBA /* homeassistant-nativeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "homeassistant-nativeUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6839797F27766E440033DFBA /* homeassistant_nativeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = homeassistant_nativeUITests.swift; sourceTree = "<group>"; };
+		6839798127766E440033DFBA /* homeassistant_nativeUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = homeassistant_nativeUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		685FA1EE277919A20061DF86 /* UserSettingTileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSettingTileView.swift; sourceTree = "<group>"; };
+		685FA1F027791EDD0061DF86 /* HASettingItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HASettingItemView.swift; sourceTree = "<group>"; };
+		68A3D5D82778D01400BFDE39 /* HAColorTileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HAColorTileView.swift; sourceTree = "<group>"; };
+		68A3D5DA2778D8F800BFDE39 /* HaBrightnessSliderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HaBrightnessSliderView.swift; sourceTree = "<group>"; };
+		68A3D5E42778FECC00BFDE39 /* ViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewExtension.swift; sourceTree = "<group>"; };
+		68A3D5E62778FF0400BFDE39 /* RoundedCorner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedCorner.swift; sourceTree = "<group>"; };
+		68A3D5E82778FF1F00BFDE39 /* BottomSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomSheet.swift; sourceTree = "<group>"; };
+		68A3D5EC2779111900BFDE39 /* SwitchWidgetListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwitchWidgetListView.swift; sourceTree = "<group>"; };
+		68C81E37277797BF00A99F04 /* DefaultTheme.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = DefaultTheme.xcassets; sourceTree = "<group>"; };
+		68C81E3B277799B200A99F04 /* HAFootNoteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HAFootNoteView.swift; sourceTree = "<group>"; };
+		68C81E3D27779B5A00A99F04 /* HAMainTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HAMainTextView.swift; sourceTree = "<group>"; };
+		68C81E4127779D7800A99F04 /* HABasicToggleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HABasicToggleView.swift; sourceTree = "<group>"; };
+		68C81E472777A58100A99F04 /* HAWidgetImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HAWidgetImageView.swift; sourceTree = "<group>"; };
+		68C81E492777B20600A99F04 /* LightWidgetDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LightWidgetDetailsView.swift; sourceTree = "<group>"; };
+		68C81E4B2777B7AE00A99F04 /* ModalSettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalSettingsView.swift; sourceTree = "<group>"; };
+		68C81E4D2777BC5900A99F04 /* HATitleTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HATitleTextView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6839795E27766E420033DFBA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6839796E27766E440033DFBA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6839797827766E440033DFBA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		682B2D122788BDB5003632FE /* ApiController */ = {
+			isa = PBXGroup;
+			children = (
+				682B2D132788BFBA003632FE /* WidgetDataSource.swift */,
+				682B2D1D2789AC92003632FE /* ChangeStatusController.swift */,
+			);
+			path = ApiController;
+			sourceTree = "<group>";
+		};
+		6839795827766E420033DFBA = {
+			isa = PBXGroup;
+			children = (
+				6839796327766E420033DFBA /* homeassistant-native */,
+				6839797427766E440033DFBA /* homeassistant-nativeTests */,
+				6839797E27766E440033DFBA /* homeassistant-nativeUITests */,
+				6839796227766E420033DFBA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6839796227766E420033DFBA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6839796127766E420033DFBA /* Home Assistant.app */,
+				6839797127766E440033DFBA /* homeassistant-nativeTests.xctest */,
+				6839797B27766E440033DFBA /* homeassistant-nativeUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6839796327766E420033DFBA /* homeassistant-native */ = {
+			isa = PBXGroup;
+			children = (
+				68A3D5E02778FDF100BFDE39 /* Sources */,
+				68C81E442777A00000A99F04 /* Extensions */,
+				68C81E352777969100A99F04 /* Views */,
+				68C81E342777968C00A99F04 /* Models */,
+				68C81E332777968600A99F04 /* Controllers */,
+				68C81E322777961000A99F04 /* Helpers */,
+				6839796427766E420033DFBA /* homeassistant_nativeApp.swift */,
+				6839796627766E420033DFBA /* ContentView.swift */,
+				682B2D212789ADD9003632FE /* Config.swift */,
+				6839796827766E440033DFBA /* Assets.xcassets */,
+				68C81E37277797BF00A99F04 /* DefaultTheme.xcassets */,
+				6839796A27766E440033DFBA /* Preview Content */,
+			);
+			path = "homeassistant-native";
+			sourceTree = "<group>";
+		};
+		6839796A27766E440033DFBA /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				6839796B27766E440033DFBA /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		6839797427766E440033DFBA /* homeassistant-nativeTests */ = {
+			isa = PBXGroup;
+			children = (
+				6839797527766E440033DFBA /* homeassistant_nativeTests.swift */,
+			);
+			path = "homeassistant-nativeTests";
+			sourceTree = "<group>";
+		};
+		6839797E27766E440033DFBA /* homeassistant-nativeUITests */ = {
+			isa = PBXGroup;
+			children = (
+				6839797F27766E440033DFBA /* homeassistant_nativeUITests.swift */,
+				6839798127766E440033DFBA /* homeassistant_nativeUITestsLaunchTests.swift */,
+			);
+			path = "homeassistant-nativeUITests";
+			sourceTree = "<group>";
+		};
+		68A3D5E02778FDF100BFDE39 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				68A3D5E12778FE8100BFDE39 /* BottomSheet */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		68A3D5E12778FE8100BFDE39 /* BottomSheet */ = {
+			isa = PBXGroup;
+			children = (
+				68A3D5E42778FECC00BFDE39 /* ViewExtension.swift */,
+				68A3D5E62778FF0400BFDE39 /* RoundedCorner.swift */,
+				68A3D5E82778FF1F00BFDE39 /* BottomSheet.swift */,
+			);
+			path = BottomSheet;
+			sourceTree = "<group>";
+		};
+		68C81E2E2777952200A99F04 /* Header */ = {
+			isa = PBXGroup;
+			children = (
+				683259532776811900222A76 /* HeaderView.swift */,
+			);
+			path = Header;
+			sourceTree = "<group>";
+		};
+		68C81E302777955600A99F04 /* WidgetViews */ = {
+			isa = PBXGroup;
+			children = (
+				68A3D5EC2779111900BFDE39 /* SwitchWidgetListView.swift */,
+				68357E88277688B4004B2879 /* TemperatureHumidityWidgetView.swift */,
+			);
+			path = WidgetViews;
+			sourceTree = "<group>";
+		};
+		68C81E322777961000A99F04 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		68C81E332777968600A99F04 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				682B2D122788BDB5003632FE /* ApiController */,
+				68357E86277687FE004B2879 /* ColorManager.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		68C81E342777968C00A99F04 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				682B2D152788C0FD003632FE /* HomeAssistantEntityModel.swift */,
+				682B2D1B2788C1C7003632FE /* HomeAssistantAttributeModel.swift */,
+				682B2D172788C1AA003632FE /* HomeAssistantContextModel.swift */,
+				682B2D1F2789AD6B003632FE /* HomeAssistantStateObjectModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		68C81E352777969100A99F04 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				68C81E3A2777997200A99F04 /* HAUIViews */,
+				68C81E302777955600A99F04 /* WidgetViews */,
+				68C81E2E2777952200A99F04 /* Header */,
+				68C81E492777B20600A99F04 /* LightWidgetDetailsView.swift */,
+				680AE98E2779C37500FC62A8 /* MediaPlayerView.swift */,
+				685FA1EE277919A20061DF86 /* UserSettingTileView.swift */,
+				68C81E4B2777B7AE00A99F04 /* ModalSettingsView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		68C81E3A2777997200A99F04 /* HAUIViews */ = {
+			isa = PBXGroup;
+			children = (
+				68C81E3B277799B200A99F04 /* HAFootNoteView.swift */,
+				68C81E472777A58100A99F04 /* HAWidgetImageView.swift */,
+				68C81E3D27779B5A00A99F04 /* HAMainTextView.swift */,
+				68C81E4D2777BC5900A99F04 /* HATitleTextView.swift */,
+				68C81E4127779D7800A99F04 /* HABasicToggleView.swift */,
+				68A3D5D82778D01400BFDE39 /* HAColorTileView.swift */,
+				68A3D5DA2778D8F800BFDE39 /* HaBrightnessSliderView.swift */,
+				685FA1F027791EDD0061DF86 /* HASettingItemView.swift */,
+				680AE9902779C96200FC62A8 /* HABasicIconView.swift */,
+			);
+			path = HAUIViews;
+			sourceTree = "<group>";
+		};
+		68C81E442777A00000A99F04 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6839796027766E420033DFBA /* homeassistant-native */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6839798527766E440033DFBA /* Build configuration list for PBXNativeTarget "homeassistant-native" */;
+			buildPhases = (
+				6839795D27766E420033DFBA /* Sources */,
+				6839795E27766E420033DFBA /* Frameworks */,
+				6839795F27766E420033DFBA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "homeassistant-native";
+			productName = "homeassistant-native";
+			productReference = 6839796127766E420033DFBA /* Home Assistant.app */;
+			productType = "com.apple.product-type.application";
+		};
+		6839797027766E440033DFBA /* homeassistant-nativeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6839798827766E440033DFBA /* Build configuration list for PBXNativeTarget "homeassistant-nativeTests" */;
+			buildPhases = (
+				6839796D27766E440033DFBA /* Sources */,
+				6839796E27766E440033DFBA /* Frameworks */,
+				6839796F27766E440033DFBA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6839797327766E440033DFBA /* PBXTargetDependency */,
+			);
+			name = "homeassistant-nativeTests";
+			productName = "homeassistant-nativeTests";
+			productReference = 6839797127766E440033DFBA /* homeassistant-nativeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		6839797A27766E440033DFBA /* homeassistant-nativeUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6839798B27766E440033DFBA /* Build configuration list for PBXNativeTarget "homeassistant-nativeUITests" */;
+			buildPhases = (
+				6839797727766E440033DFBA /* Sources */,
+				6839797827766E440033DFBA /* Frameworks */,
+				6839797927766E440033DFBA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6839797D27766E440033DFBA /* PBXTargetDependency */,
+			);
+			name = "homeassistant-nativeUITests";
+			productName = "homeassistant-nativeUITests";
+			productReference = 6839797B27766E440033DFBA /* homeassistant-nativeUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6839795927766E420033DFBA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1320;
+				LastUpgradeCheck = 1320;
+				TargetAttributes = {
+					6839796027766E420033DFBA = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+					6839797027766E440033DFBA = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+					6839797A27766E440033DFBA = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = 6839796027766E420033DFBA;
+					};
+				};
+			};
+			buildConfigurationList = 6839795C27766E420033DFBA /* Build configuration list for PBXProject "homeassistant-native" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6839795827766E420033DFBA;
+			productRefGroup = 6839796227766E420033DFBA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6839796027766E420033DFBA /* homeassistant-native */,
+				6839797027766E440033DFBA /* homeassistant-nativeTests */,
+				6839797A27766E440033DFBA /* homeassistant-nativeUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6839795F27766E420033DFBA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6839796C27766E440033DFBA /* Preview Assets.xcassets in Resources */,
+				6839796927766E440033DFBA /* Assets.xcassets in Resources */,
+				68C81E38277797BF00A99F04 /* DefaultTheme.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6839796F27766E440033DFBA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6839797927766E440033DFBA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6839795D27766E420033DFBA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				68C81E4C2777B7AE00A99F04 /* ModalSettingsView.swift in Sources */,
+				680AE9912779C96200FC62A8 /* HABasicIconView.swift in Sources */,
+				682B2D162788C0FD003632FE /* HomeAssistantEntityModel.swift in Sources */,
+				68A3D5E92778FF1F00BFDE39 /* BottomSheet.swift in Sources */,
+				68A3D5E52778FECC00BFDE39 /* ViewExtension.swift in Sources */,
+				682B2D1E2789AC92003632FE /* ChangeStatusController.swift in Sources */,
+				68C81E3C277799B200A99F04 /* HAFootNoteView.swift in Sources */,
+				68C81E3E27779B5A00A99F04 /* HAMainTextView.swift in Sources */,
+				685FA1EF277919A20061DF86 /* UserSettingTileView.swift in Sources */,
+				68A3D5D92778D01400BFDE39 /* HAColorTileView.swift in Sources */,
+				680AE98F2779C37500FC62A8 /* MediaPlayerView.swift in Sources */,
+				6839796727766E420033DFBA /* ContentView.swift in Sources */,
+				68C81E4227779D7800A99F04 /* HABasicToggleView.swift in Sources */,
+				682B2D202789AD6B003632FE /* HomeAssistantStateObjectModel.swift in Sources */,
+				68357E87277687FE004B2879 /* ColorManager.swift in Sources */,
+				68A3D5ED2779111900BFDE39 /* SwitchWidgetListView.swift in Sources */,
+				682B2D222789ADD9003632FE /* Config.swift in Sources */,
+				68C81E4A2777B20600A99F04 /* LightWidgetDetailsView.swift in Sources */,
+				6839796527766E420033DFBA /* homeassistant_nativeApp.swift in Sources */,
+				682B2D142788BFBA003632FE /* WidgetDataSource.swift in Sources */,
+				68C81E4E2777BC5900A99F04 /* HATitleTextView.swift in Sources */,
+				682B2D1C2788C1C7003632FE /* HomeAssistantAttributeModel.swift in Sources */,
+				68357E89277688B4004B2879 /* TemperatureHumidityWidgetView.swift in Sources */,
+				683259542776811900222A76 /* HeaderView.swift in Sources */,
+				68A3D5DB2778D8F800BFDE39 /* HaBrightnessSliderView.swift in Sources */,
+				68A3D5E72778FF0400BFDE39 /* RoundedCorner.swift in Sources */,
+				685FA1F127791EDD0061DF86 /* HASettingItemView.swift in Sources */,
+				68C81E482777A58100A99F04 /* HAWidgetImageView.swift in Sources */,
+				682B2D182788C1AA003632FE /* HomeAssistantContextModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6839796D27766E440033DFBA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6839797627766E440033DFBA /* homeassistant_nativeTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6839797727766E440033DFBA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6839798027766E440033DFBA /* homeassistant_nativeUITests.swift in Sources */,
+				6839798227766E440033DFBA /* homeassistant_nativeUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6839797327766E440033DFBA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6839796027766E420033DFBA /* homeassistant-native */;
+			targetProxy = 6839797227766E440033DFBA /* PBXContainerItemProxy */;
+		};
+		6839797D27766E440033DFBA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6839796027766E420033DFBA /* homeassistant-native */;
+			targetProxy = 6839797C27766E440033DFBA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		6839798327766E440033DFBA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		6839798427766E440033DFBA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6839798627766E440033DFBA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"homeassistant-native/Preview Content\"";
+				DEVELOPMENT_TEAM = G6Q9554M9R;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.bitcutter.homeassistant-native";
+				PRODUCT_NAME = "Home Assistant";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6839798727766E440033DFBA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"homeassistant-native/Preview Content\"";
+				DEVELOPMENT_TEAM = G6Q9554M9R;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.bitcutter.homeassistant-native";
+				PRODUCT_NAME = "Home Assistant";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		6839798927766E440033DFBA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = G6Q9554M9R;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.bitcutter.homeassistant-nativeTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6839798A27766E440033DFBA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = G6Q9554M9R;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.bitcutter.homeassistant-nativeTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		6839798C27766E440033DFBA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = G6Q9554M9R;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.bitcutter.homeassistant-nativeUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "homeassistant-native";
+			};
+			name = Debug;
+		};
+		6839798D27766E440033DFBA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = G6Q9554M9R;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.bitcutter.homeassistant-nativeUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "homeassistant-native";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6839795C27766E420033DFBA /* Build configuration list for PBXProject "homeassistant-native" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6839798327766E440033DFBA /* Debug */,
+				6839798427766E440033DFBA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6839798527766E440033DFBA /* Build configuration list for PBXNativeTarget "homeassistant-native" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6839798627766E440033DFBA /* Debug */,
+				6839798727766E440033DFBA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6839798827766E440033DFBA /* Build configuration list for PBXNativeTarget "homeassistant-nativeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6839798927766E440033DFBA /* Debug */,
+				6839798A27766E440033DFBA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6839798B27766E440033DFBA /* Build configuration list for PBXNativeTarget "homeassistant-nativeUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6839798C27766E440033DFBA /* Debug */,
+				6839798D27766E440033DFBA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6839795927766E420033DFBA /* Project object */;
+}
