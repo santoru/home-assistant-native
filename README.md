@@ -42,7 +42,7 @@ The goal of this application is not to implement 1:1 features parity with the or
 - https://coolors.co/bee9e8-62b6cb-1b4965-cae9ff-5fa8d3
 
 ## License
-The [Apache 2.0](LICENSE.md) License apply
+The [Apache 2.0](LICENSE.txt) License apply
 ```
    Copyright 2021 santoru
 
