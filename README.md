@@ -25,6 +25,13 @@ Apart from the personal feeling, the native SwiftUI application has several adva
 
 The goal of this application is not to implement 1:1 features parity with the original Home Assistant iOS app but to have a minimal, fast and native companion app to be used to quickly monitor the status of the Home and perform basic operations on the devices.
 
+### Configuration and Authentication
+At the moment the configuration is present inside the following file:
+```
+app/homeassistant-native/Config.swift
+```
+You need to setup the `authorizationToken` variable with a current valid long-lived token to authenticate the application to your HomeAssistant instance.
+
 ### Known issues
 - The NavigationView Sections have a collapsable button, this should not be visible
 
